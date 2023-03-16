@@ -1,4 +1,6 @@
-import Logo from "./../assets/Logo .jpg";
+import Logo from "../assets/Logo.svg"
+import "./Nav.css";
+
 
 function Nav() {
     return(
