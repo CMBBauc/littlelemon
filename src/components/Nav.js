@@ -1,5 +1,7 @@
-import Logo from "../assets/Logo.svg"
-import "./Nav.css";
+import Logo from "../assets/Logo.svg";
+import "../styles/Nav.css";
+import { Link } from 'react-router-dom';
+
 
 
 function Nav() {
@@ -7,12 +9,12 @@ function Nav() {
         <nav>
             <img src={Logo}alt="little lemon logo"></img>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservations</a></li>
-                <li><a>Online Order</a></li>
-                <li><a>Login</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><Link to="/Booking">Reservations</Link></li>
+                <li><a href="">Online Order</a></li>
+                <li><a href="">Login</a></li>
             </ul>
         </nav>
     );

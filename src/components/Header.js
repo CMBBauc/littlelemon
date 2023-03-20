@@ -1,6 +1,6 @@
 import React from 'react'
 import Food from "../assets/restauranfood.jpg";
-import "./Header.css";
+import "../styles/Header.css";
 
 
 function Header() {
