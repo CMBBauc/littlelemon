@@ -1,24 +1,73 @@
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem 15%;
+    background-color: white;
+    overflow: hidden;
 }
 
-
-ul {
+.navlinks {
     display: flex;
     gap: 2rem;
     margin: 10px;
     list-style-type: none;
 }
 
-li {
-    font-weight: 600;
-    font-size: 1rem;
+.navlinks li {
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
-a {
+.navlinks a {
     text-decoration: none;
     color: #333;
-    
+}
+
+.mobile-menu-icon {
+    display: none;
+    width: 30px;
+    height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin: 0;
+        padding-top: 10px;
+
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        background-color: black;
+        left: 0;
+        top: 62px;
+        transition: all 0.5 ease-out;
+        width: 100%;
+    }
+
+    .nav-links-mobile a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        transition: all 0.5 ease-out;
+    }
+
+
 }

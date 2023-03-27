@@ -1,6 +1,8 @@
 main {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 60%;
 }
 
 .container {
@@ -11,7 +13,6 @@ main {
 .titlecontainer {
     display: flex;
     justify-content: space-around;
-
     margin-top: 200px;
     margin-bottom: 100px;
 }
@@ -20,7 +21,7 @@ main {
     margin: 20px;
     height: 500px;
     width: 300px;
-    background-color: #ededed;
+    background-color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -67,11 +68,36 @@ main {
 
 main button {
     margin-top: 25px;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: none;
     background-color: #f4ce14;
+    font-size: 16px;
     color: black;
     width: 150px;
     height: 40px;
     font-weight:bold;
-    box-shadow: -5px 5px teal;
+    box-shadow: -5px 5px #d1b011
+}
+
+main button:hover {
+    transform: translateY(5%);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .titlecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
 }

@@ -1,0 +1,30 @@
+form {
+    margin: auto;
+    background-color: blanchedalmond;
+    height: 500px;
+    width: 60%;
+    padding-left: 2rem;
+}
+
+
+form input{
+    margin: 20px;
+    border: none;
+}
+
+.formContainer {
+    display: flex;
+}
+
+
+
+form select {
+    margin: 1rem;
+    height: 2rem;
+}
+
+form option {
+    text-align: center;
+    height: 1rem;
+    width: auto;
+}
