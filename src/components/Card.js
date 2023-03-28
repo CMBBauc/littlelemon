@@ -1,13 +1,21 @@
 import React from "react";
+import '../styles/Card.css'
 
-export default function Card([title, price, description, imageSource]) {
+const Card = ({ image, title, price, description }) => {
     return (
-        <div>
-            <img src={imageSource} alt="Menu item"></img>
-            <h1>{title}</h1>
-            <p>{price}</p>
-            <p>{description}</p>
-            <h2>Order a delivery</h2>
+      <main>
+        <div className="card">
+            <img src={image} alt="greek salad" />
+            <div className="dish-info">
+            <div className="title">
+                <h3>{title}</h3>
+                <p className="price">${price}</p>
+            </div>
+            <p className="description">{description}</p>
+            </div>
         </div>
-    )
-}
+      </main>
+    );
+  };
+
+  export default Card;

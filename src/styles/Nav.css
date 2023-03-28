@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 15%;
+    padding: 1.2rem 3rem 2rem;
     background-color: white;
     overflow: hidden;
 }
@@ -12,6 +12,7 @@
     margin: 10px;
     list-style-type: none;
 }
+
 
 .navlinks li {
     font-weight: bolder;
@@ -51,23 +52,26 @@
     .nav-links-mobile {
         position: absolute;
         display: block;
-        background-color: black;
+        background-color: lightgray;
+        padding-left: 0;
         left: 0;
-        top: 62px;
+        top: 75px;
         transition: all 0.5 ease-out;
         width: 100%;
+        text-align: center;
+
     }
 
+
     .nav-links-mobile a {
-        display: block;
-        color: white;
+        color: black;
         text-decoration: none;
         list-style-type: none;
-        text-align: center;
         padding: 20px;
         width: 100%;
         transition: all 0.5 ease-out;
     }
+
 
 
 }
